@@ -15,7 +15,6 @@ class MathOperations:
         return self.fibonacci(n - 1) + self.fibonacci(n - 2)
 
 
-# Main section
 if __name__ == "__main__":
     math_ops = MathOperations()   # Creating object of the class
 
