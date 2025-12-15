@@ -1,7 +1,7 @@
 import sqlite3
 
 class ClinicSystem:
-    def __init__(self):
+    def __init__(self): # initializing the database connection
         self.conn = sqlite3.connect("clinic.db")
         self.cursor = self.conn.cursor()
         self.create_tables()
@@ -55,7 +55,7 @@ class ClinicSystem:
         self.conn.commit()
 
     # REQUIRED FUNCTIONS
-    def list_senior_patients(self):
+    def list_senior_patients(self): # listing patients older than 65
         print("\n--- Senior Patients (Age > 65) ---")
         self.cursor.execute("SELECT * FROM Patient WHERE age > 65")
         patients = self.cursor.fetchall()
