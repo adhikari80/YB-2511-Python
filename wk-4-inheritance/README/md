@@ -1,0 +1,6 @@
+This program demonstrates object-oriented inheritance using a college system.
+A base class Person contains common attributes.
+Student and Staff inherit from Person.
+General and Academic further inherit from Staff, showing multilevel inheritance.
+
+All classes are implemented in one Python file for simplicity, while still maintaining clean structure and clear inheritance relationships.
